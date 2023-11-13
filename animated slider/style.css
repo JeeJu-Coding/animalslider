@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: black;
+}
+.slider-container{
+    width: 85%;
+    margin: auto;
+    height: 100vh;
+    background-image: url("img/panda.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+}
+.active{
+    width: 850px !important;
+    background: #00000038 !important;
+    padding: 0px 100px !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.elephant-container{
+    width: 425px;
+    background: #0000001a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.gorilla-container{
+    width: 425px;
+    background: #0000000a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.panda-container{
+    width: 425px;
+    background: #0000000a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.slider-container p{
+    font-weight: 700px;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+.active p{
+    color: #70ffe5 !important;
+}
+.slider-container .animal-details{
+    display: none;
+}
+.active .animal-details{
+    display: block;
+}
+.animal-details h1{
+    font-weight: 500;
+    font-size: 64px;
+    color: #fff;
+    width: 500px;
+    line-height: 75px;
+    padding: 20px 0px;
+}
+.animal-details h6{
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    width: 500px;
+    line-height: 32px;
+    padding-bottom: 25px;
+}
+.animal-details button{
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    background-color: #70ffe5;
+    border: none;
+    letter-spacing: 3px;
+    border-radius: 115px;
+    cursor: pointer;
+}

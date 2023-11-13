@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="panda-container active">
+            <p>pandas</p>
+            <div class="animal-details">
+                <h1>Giant pandas: Living proof that conservation works</h1>
+                <h6>The charismatic giant panda – WWF’s famous symbol – is a conservation icon turned conservation success.</h6>
+                <button>donate now</button>
+            </div>
+        </div>
+
+        <div class="elephant-container">
+            <p>elephant</p>
+            <div class="animal-details">
+                <h1>Strong, smart, but vunerable</h1>
+                <h6>Following population declines over several decades due to poaching for ivory and loss of habitat, the African forest elephant is now listed as Critically Endangered.</h6>
+                <button>donate now</button>
+            </div>
+        </div>
+
+        <div class="gorilla-container">
+            <p>gorilla</p>
+            <div class="animal-details">
+                <h1>Moutain gorillas: Close relatives at risk</h1>
+                <h6>By protecting mountain gorillas we’re helping make sure their environment stays healthy for the wildlife and people that depend on it.</h6>
+                <button>donate now</button>
+            </div>
+        </div>
+    </div>
+
+
+<script src="jquery.js"></script>
+
+<script>
+  jQuery(document).ready(function($){
+      $(".elephant-container").click(function(){
+        $(".slider-container").css('backgroundImage','url(img/elephant.png)');
+        $(".gorilla-container").removeClass("active");
+        $(".panda-container").removeClass("active");
+        $(this).addClass("active");
+      });
+
+      $(".gorilla-container").click(function(){
+        $(".slider-container").css('backgroundImage','url(img/gorilla.png)');
+        $(".elephant-container").removeClass("active");
+        $(".panda-container").removeClass("active");
+        $(this).addClass("active");
+      });
+
+      $(".panda-container").click(function(){
+        $(".slider-container").css('backgroundImage','url(img/panda.png)');
+        $(".gorilla-container").removeClass("active");
+        $(".elephant-container").removeClass("active");
+        $(this).addClass("active");
+      });
+    });
+</script>
+</body>
+</html>
+
+
+
+
